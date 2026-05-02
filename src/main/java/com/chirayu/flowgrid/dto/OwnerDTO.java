@@ -1,23 +1,26 @@
 package com.chirayu.flowgrid.dto;
 
 import com.chirayu.flowgrid.enums.Gender;
-import lombok.*;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
 @Setter
 @Getter
 public class OwnerDTO {
-        @EqualsAndHashCode.Include
-        private Integer id;
-        private String firstName;
-        private String lastName;
-        private Gender gender;
-        private String city;
-        private String state;
-        @EqualsAndHashCode.Include
-        private String mobileNumber;
-        @EqualsAndHashCode.Include
-        private String emailId;
-        private PetDTO petDTO;
+    @EqualsAndHashCode.Include
+    private Integer id;
+    private String firstName;
+    private String lastName;
+    private Gender gender;
+    private String city;
+    private String state;
+    @EqualsAndHashCode.Include
+    private String mobileNumber;
+    @EqualsAndHashCode.Include
+    private String emailId;
+    private PetDTO petDTO;
 }
