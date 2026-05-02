@@ -12,8 +12,8 @@ import lombok.ToString;
 
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "category")
-@JsonSubTypes({ @Type(value = DomesticPetDTO.class, name = "Domestic"),
-        @Type(value = WildPetDTO.class, name = "Wild") })
+@JsonSubTypes({@Type(value = DomesticPetDTO.class, name = "Domestic"),
+        @Type(value = WildPetDTO.class, name = "Wild")})
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
 @Setter
