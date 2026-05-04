@@ -2,7 +2,7 @@ spring:
   application:
     name: PawStack
   datasource:
-    url: jdbc:postgresql://localhost:5432/pawstack
+    url: jdbc:postgresql://postgres:5432/pawstack
     username: ${USERNAME}
     password: ${PASSWORD}
   jpa:
@@ -11,7 +11,7 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
   mail:
-    host: localhost
+    host: mailpit
     port: 1025
     properties:
       mail:
