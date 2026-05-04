@@ -12,7 +12,7 @@ import java.time.LocalDate;
 @Setter
 @Table(name = "domestic_pet_table")
 @Entity
-public class DomesticPet extends Pet{
-    @Column(name = "date_of_birth",nullable = false)
+public class DomesticPet extends Pet {
+    @Column(name = "date_of_birth", nullable = false)
     private LocalDate birthDate;
 }

@@ -22,7 +22,7 @@ public class Owner extends Base {
     @Column(name = "state", nullable = false)
     private String state;
     @Column(name = "mobile_number", nullable = false, unique = true, length = 10)
-    private String mobileNumebr;
+    private String mobileNumber;
     @Column(name = "email_id", nullable = false, unique = true, length = 50)
     private String emailId;
     @OneToOne(cascade = CascadeType.ALL, optional = false, orphanRemoval = true)

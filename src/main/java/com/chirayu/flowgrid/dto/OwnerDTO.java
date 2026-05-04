@@ -12,7 +12,7 @@ import lombok.ToString;
 @Getter
 public class OwnerDTO {
     @EqualsAndHashCode.Include
-    private Integer id;
+    private Long id;
     private String firstName;
     private String lastName;
     private Gender gender;
